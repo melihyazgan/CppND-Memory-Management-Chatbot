@@ -72,7 +72,7 @@ ChatBot::ChatBot( ChatBot &&source){
     source._rootNode =nullptr;
     source._currentNode =nullptr;
 }
-ChatBot &ChatBot::operator =( ChatBot &&source){
+ ChatBot &ChatBot::operator =( ChatBot &&source){
     std::cout<< "Move Assignment Operator\n";
     if (this == &source) {return *this;}
     _image = source._image;
